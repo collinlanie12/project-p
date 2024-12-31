@@ -1,11 +1,10 @@
-function App() {
+import Navbar from "./components/Navbar";
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-500">
-        Welcome to My Portfolio!
-      </h1>
+    <div>
+      <Navbar />
     </div>
   );
-}
+};
 
 export default App;
