@@ -1,5 +1,3 @@
-import React from "react";
-
 const Navbar = () => {
   const menuItems = [
     { label: "Home", href: "#home" },
