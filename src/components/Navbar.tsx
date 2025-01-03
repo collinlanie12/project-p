@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#home" className="">
           <img
-            src="src/assets/cl-dev-high-resolution-logo-transparent.svg"
+            src="/cl-dev-high-resolution-logo-transparent.svg"
             alt="My Portfolio Logo"
             className="h-14 w-auto"
           />
