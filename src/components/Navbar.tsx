@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 left-0 w-full bg-transparent text-white z-50"
+      className="fixed top-5 left-0 w-full bg-transparent text-white z-50"
     >
       <div className="container mx-auto flex items-center justify-between p-4 mt-4">
         {/* Logo */}
@@ -57,12 +57,15 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <ul
-          className={`fixed top-16 right-0 w-full bg-black md:bg-transparent md:static md:flex md:items-center md:space-x-3 md:w-auto md:opacity-100 transition-transform duration-500 ${
+          className={`fixed top-20 right-0 w-full bg-black md:bg-transparent md:static md:flex md:items-center md:space-x-3 md:w-auto md:opacity-100 transition-transform duration-500 ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } md:translate-x-0`}
         >
           {menuItems.map((item) => (
-            <li key={item.href} className="text-center md:text-left px-4">
+            <li
+              key={item.href}
+              className="text-center md:text-left px-4 bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transition-all duration-300 reounded md:bg-transparent md:hover:bg-transparent"
+            >
               <a
                 href={item.href}
                 className="block py-2 md:inline hover:underline focus:outline-none focus:ring-2 focus:ring-white"
