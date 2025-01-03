@@ -37,7 +37,7 @@ const Loading = () => {
         }`}
       >
         {/* Progress Bar */}
-        <div className="bg-gray-700 rounded-full h-4 overflow-hidden">
+        <div className="bg-gray-700 mr-5 ml-5 rounded-full h-4 overflow-hidden">
           <div
             className="bg-blue-500 h-full transition-all duration-300"
             style={{ width: `${progress}%` }}
