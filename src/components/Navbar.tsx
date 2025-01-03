@@ -26,13 +26,16 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      ref={navRef}
-      className="fixed top-5 left-0 w-full bg-transparent text-white z-50"
-    >
-      <div className="container mx-auto flex items-center justify-between p-4 mt-4">
+    <nav ref={navRef} className="fixed w-full bg-transparent text-white">
+      <div className="flex flex-row items-center justify-between p-4 py-4 mt-4">
         {/* Logo */}
-        <h1 className="text-xl font-bold">My Portfolio</h1>
+        <a href="#home" className="">
+          <img
+            src="src/assets/cl-dev-high-resolution-logo-transparent.svg"
+            alt="My Portfolio Logo"
+            className="h-14 w-auto"
+          />
+        </a>
 
         {/* Hamburger Icon */}
         <button
